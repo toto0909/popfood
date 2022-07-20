@@ -4,11 +4,25 @@ import getters from './getters';
 import mutations from './mutations';
 import actions from './actions'
 
-//stateの初期化
+//state<SearchParams>の初期化
 const state: SearchParams = {
-    prefecture: "",
+    prefecture: "東京",
     large_area: "",
-    middle_area: ""
+    middle_area: "",
+    lat: 0,
+    lan: 0,
+    range: 3,
+    keyword: "",
+    genre: "",
+    free_drink: false,
+    free_food: false,
+    private_room: false,
+    parking: false,
+    card: false,
+    charter: false,
+    midnight: false,
+    child: false,
+    pet: false
 }
 
 export const search: Module<SearchParams, RootState> = {
