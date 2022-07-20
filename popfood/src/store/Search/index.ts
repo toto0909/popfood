@@ -7,8 +7,8 @@ import actions from './actions'
 //state<SearchParams>の初期化
 const state: SearchParams = {
     prefecture: "東京",
-    large_area: "",
-    middle_area: "",
+    large_area: "Z011", //サンプル 東京
+    middle_area: ["Y005","Y030"], //サンプル 銀座, 渋谷
     lat: 0,
     lan: 0,
     range: 3,

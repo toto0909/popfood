@@ -23,11 +23,13 @@
                                 <!--ダイアログ中身 開閉部分のみ(内容は別ファイル)-->
                                 <v-card>
                                     <v-toolbar flat color=#FFFFFF>
-                                        <v-btn icon @click="dialog = false">
+                                        <v-btn icon @click="dialog = false"> <!--TODO ここ閉じたら再検索-->
                                             <v-icon style="color: #888888;">mdi-close-circle-outline</v-icon>
                                         </v-btn>
                                         <v-toolbar-title style="font-size: 1.0rem; color: #888888;">検索条件を設定</v-toolbar-title>
                                     </v-toolbar>
+                                    <!--ダイアログ >>SearchOption.vue-->
+                                    <SearchOption />
                                 </v-card>
                             </v-dialog>
                         </div>
@@ -61,9 +63,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import SearchOption from '@/components/searchComponents/SearchOption.vue'
 
 export default Vue.extend({
     name: 'SearchHeader',
+    components: {
+        SearchOption
+    },
     data: () => ({
         dialog: false
     })
