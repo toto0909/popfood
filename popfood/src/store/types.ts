@@ -14,7 +14,7 @@ export interface SearchParams {
     lan : number;          //検索緯度
     range : number;        //検索範囲 (1: 300m 2: 500m 3: 1000m (初期値) 4: 2000m 5: 3000m)
     keyword : string;      //検索キーワード
-    genre : string;        //店舗ジャンル
+    genre : string[];       //店舗ジャンル
     free_drink : boolean;  //飲み放題あり(1:絞り込みあり)
     free_food : boolean;   //食べ放題あり(1:絞り込みあり)
     private_room : boolean;//個室あり(1:絞り込みあり)

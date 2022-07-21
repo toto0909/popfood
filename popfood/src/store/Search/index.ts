@@ -13,7 +13,7 @@ const state: SearchParams = {
     lan: 0,
     range: 3,
     keyword: "",
-    genre: "",
+    genre: [],
     free_drink: false,
     free_food: false,
     private_room: false,
