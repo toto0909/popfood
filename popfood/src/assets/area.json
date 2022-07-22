@@ -1,0 +1,211 @@
+{
+    "TOKYO"  :  {
+        "PREF_INDEX"   :  13,
+        "PREF_NAME"    :  "東京都",
+        "AREA_CODE"    :  "Z011",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  true, 
+        "CITIES"  :  {
+            "SHINJUKU"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_CODE"    :  "Y055",
+                "CITY_NAME"    :  "新宿", 
+                "LATITUDE"     :  35.689904097355935,
+                "LONGITUDE"    :  139.70053863642784
+            },
+            "SHIBUYA"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_CODE"    :  "Y030",
+                "CITY_NAME"    :  "渋谷",
+                "LATITUDE"     :  35.658234377718486,
+                "LONGITUDE"    :  139.70164652640923
+            },
+            "IKEBUKURO"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_CODE"    :  "Y050",
+                "CITY_NAME"    :  "池袋", 
+                "LATITUDE"     :  35.7296856791823,
+                "LONGITUDE"    :  139.71092155524713
+            },
+            "SHINOKUBO"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_CODE"    :  "Y056",
+                "CITY_NAME"    :  "新大久保・大久保",
+                "LATITUDE"     :  35.70665324242551,
+                "LONGITUDE"    :  139.70104142774105
+            },
+            "TOKYO"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_CODE"    :  "Y010",
+                "CITY_NAME"    :  "東京・大手町・日本橋・人形町",
+                "LATITUDE"     :  35.67708309718654,
+                "LONGITUDE"    :  139.76564521654527
+            },
+            "UENO"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_CODE"    :  "Y015",
+                "CITY_NAME"    :  "上野・御徒町・浅草",
+                "LATITUDE"     :  35.714680645259456,
+                "LONGITUDE"    :  139.7774045591957
+            },
+            "KANDA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_CODE"    :  "Y020",
+                "CITY_NAME"    :  "神田・神保町・秋葉原・御茶ノ水",
+                "LATITUDE"     :  35.69595084172352,
+                "LONGITUDE"    :  139.77504486773194
+            },
+            "SHINBASHI"  :  {
+                "CITY_INDEX"   :  8,
+                "CITY_CODE"    :  "Y005",
+                "CITY_NAME"    :  "銀座・有楽町・新橋",
+                "LATITUDE"     :  35.66665355945012,
+                "LONGITUDE"    :  139.75843061068954
+            },
+            "MITA"  :  {
+                "CITY_INDEX"   :  9,
+                "CITY_CODE"    :  "Y114",
+                "CITY_NAME"    :  "三田",
+                "LATITUDE"     :  35.64568997841622,
+                "LONGITUDE"    :  139.7469509374716
+            },
+            "SHINAGAWA"  :  {
+                "CITY_INDEX"   :  10,
+                "CITY_CODE"    :  "Y025",
+                "CITY_NAME"    :  "品川・田町・目黒・浜松町",
+                "LATITUDE"     :  35.62954686822709,
+                "LONGITUDE"    :  139.73870675489903
+            },
+            "EBISU"  :  {
+                "CITY_INDEX"   :  11,
+                "CITY_CODE"    :  "Y040",
+                "CITY_NAME"    :  "恵比寿・中目黒・代官山",
+                "LATITUDE"     :  35.64668543606261,
+                "LONGITUDE"    :  139.70845366211233
+            },
+            "TAKADANOBABA"  :  {
+                "CITY_INDEX"   :  12,
+                "CITY_CODE"    :  "Y072",
+                "CITY_NAME"    :  "高田馬場",
+                "LATITUDE"     :  35.70665324242551,
+                "LONGITUDE"    :  139.70104142774105
+            },
+            "YOTSUYA"  :  {
+                "CITY_INDEX"   :  13,
+                "CITY_CODE"    :  "Y013",
+                "CITY_NAME"    :  "四ツ谷・市ヶ谷・麹町",
+                "LATITUDE"     :  35.68833099236024,
+                "LONGITUDE"    :  139.7337517460862
+            },
+            "IDABASHI"  :  {
+                "CITY_INDEX"   :  14,
+                "CITY_CODE"    :  "Y006",
+                "CITY_NAME"    :  "飯田橋・水道橋・九段下",
+                "LATITUDE"     :  35.699161958151365,
+                "LONGITUDE"    :  139.74952831998255
+            },
+            "ROPPONGI"  :  {
+                "CITY_INDEX"   :  15,
+                "CITY_CODE"    :  "Y045",
+                "CITY_NAME"    :  "六本木・青山・麻布・赤坂",
+                "LATITUDE"     :  35.67000234660899,
+                "LONGITUDE"    :  139.73320951883736
+            },
+            "KINSHICHO"  :  {
+                "CITY_INDEX"   :  16,
+                "CITY_CODE"    :  "Y017",
+                "CITY_NAME"    :  "錦糸町・亀戸",
+                "LATITUDE"     :  35.697935345162875,
+                "LONGITUDE"    :  139.81394732351745
+            },
+            "SENJU"  :  {
+                "CITY_INDEX"   :  17,
+                "CITY_CODE"    :  "Y016",
+                "CITY_NAME"    :  "北千住・南千住",
+                "LATITUDE"     :  35.74338517499968,
+                "LONGITUDE"    :  139.79719238487982
+            },
+            "SHIMOKITAZAWA"  :  {
+                "CITY_INDEX"   :  18,
+                "CITY_CODE"    :  "Y070",
+                "CITY_NAME"    :  "下北沢",
+                "LATITUDE"     :  35.66402255375642,
+                "LONGITUDE"    :  139.65570765365536
+            },
+            "JIYUGAOKA"  :  {
+                "CITY_INDEX"   :  19,
+                "CITY_CODE"    :  "Y046",
+                "CITY_NAME"    :  "自由が丘",
+                "LATITUDE"     :  35.6075014132174,
+                "LONGITUDE"    :  139.66697148417987
+            },
+            "OGIKUBO"  :  {
+                "CITY_INDEX"   :  20,
+                "CITY_CODE"    :  "Y060",
+                "CITY_NAME"    :  "荻窪・阿佐ヶ谷・高円寺",
+                "LATITUDE"     :  35.70681198843564,
+                "LONGITUDE"    :  139.6360403303917
+            },
+            "MITAKA"  :  {
+                "CITY_INDEX"   :  21,
+                "CITY_CODE"    :  "Y100",
+                "CITY_NAME"    :  "三鷹・吉祥寺",
+                "LATITUDE"     :  35.70504918210394,
+                "LONGITUDE"    :  139.56125769344476
+            },
+            "TACHIKAWA"  :  {
+                "CITY_INDEX"   :  22,
+                "CITY_CODE"    :  "Y110",
+                "CITY_NAME"    :  "立川・八王子",
+                "LATITUDE"     :  35.69915340495286,
+                "LONGITUDE"    :  139.44259366669996
+            },
+            "FUCHU"  :  {
+                "CITY_INDEX"   :  24,
+                "CITY_CODE"    :  "Y077",
+                "CITY_NAME"    :  "府中・調布",
+                "LATITUDE"     :  35.667284163935605,
+                "LONGITUDE"    :  139.51164099630972
+            },
+            "MACHIDA"  :  {
+                "CITY_INDEX"   :  25,
+                "CITY_CODE"    :  "Y105",
+                "CITY_NAME"    :  "町田", 
+                "LATITUDE"     :  35.54236334958866,
+                "LONGITUDE"    :  139.44172959296316
+            },
+            "AKABANE"  :  {
+                "CITY_INDEX"   :  26,
+                "CITY_CODE"    :  "Y051",
+                "CITY_NAME"    :  "赤羽・王子", 
+                "LATITUDE"     :  35.779897948946086,
+                "LONGITUDE"    :  139.7217431171495
+            }
+        }
+    },
+    "KANAGAWA"  :  {
+        "PREF_INDEX"   :  14,
+        "PREF_NAME"    :  "神奈川県",
+        "AREA_CODE"    :  "Z012",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  true, 
+        "CITIES"  :  {
+            "YOKOHAMA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_CODE"    :  "Y135",
+                "CITY_NAME"    :  "横浜",
+                "LATITUDE"     :  35.466704231399426,
+                "LONGITUDE"    :  139.62204297038315
+            },
+            "SAKURAGICHO"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_CODE"    :  "Y136",
+                "CITY_NAME"    :  "みなとみらい・桜木町・関内",
+                "LATITUDE"     :  35.44715143997429,
+                "LONGITUDE"    :  139.631685607889
+            }
+        }
+    }
+}

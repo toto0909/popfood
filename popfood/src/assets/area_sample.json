@@ -1,0 +1,1102 @@
+{
+    "1"  :  {
+        "PREF_INDEX"   :  1,
+        "PREF_NAME"    :  "北海道",
+        "AREA_INDEX"   :  1,
+        "AREA_NAME"    :  "北海道",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "SAPPORO"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "札幌駅",
+                "LATITUDE"     :  43.06877045019153, 
+                "LONGITUDE"    :  141.3507509948026
+            },
+            "SUSUKINO"  :  {
+                "CITY_INDEX"   :  2, 
+                "CITY_NAME"    :  "すすきの",
+                "LATITUDE"     :  43.05568780273642,
+                "LONGITUDE"    :  141.35330981202526
+            },
+            "ASAHIKAWA"  :  {
+                "CITY_INDEX"   :  3, 
+                "CITY_NAME"    :  "旭川",  
+                "LATITUDE"     :  43.768487847682934,
+                "LONGITUDE"    :  142.3591462420297
+            },
+            "HAKODATE"  :  {
+                "CITY_INDEX"   :  4,  
+                "CITY_NAME"    :  "函館",   
+                "LATITUDE"     :  41.773948407601374,
+                "LONGITUDE"    :  140.72645264007204 
+            },
+            "OTARU"  :  {
+                "CITY_INDEX"   :  5,  
+                "CITY_NAME"    :  "小樽",   
+                "LATITUDE"     :  43.19791717458466,
+                "LONGITUDE"    :  140.99386215916232
+            },
+            "TOMAKOMAI"  :  {
+                "CITY_INDEX"   :  6,  
+                "CITY_NAME"    :  "苫小牧",  
+                "LATITUDE"     :  42.6398890350882, 
+                "LONGITUDE"    :  141.59674578242638
+            },
+            "KUSHIRO"  :  {
+                "CITY_INDEX"   :  7,  
+                "CITY_NAME"    :  "釧路",    
+                "LATITUDE"     :  42.990383433719934,
+                "LONGITUDE"    :  144.3824817505655
+            },
+            "OBIHIRO"  :  {
+                "CITY_INDEX"   :  8,  
+                "CITY_NAME"    :  "帯広",    
+                "LATITUDE"     :  42.91809696281973,
+                "LONGITUDE"    :  143.20206122661455
+            },
+            "KITAMI"  :  {
+                "CITY_INDEX"   :  9,  
+                "CITY_NAME"    :  "北見",    
+                "LATITUDE"     :  43.805044868227604,
+                "LONGITUDE"    :  143.89719814013435
+            },
+            "MURORAN"  :  {
+                "CITY_INDEX"   :  10, 
+                "CITY_NAME"    :  "室蘭",    
+                "LATITUDE"     :  42.31834923650072,
+                "LONGITUDE"    :  140.9741406935998 
+            }
+        }
+    },
+
+    "2"  :  {
+        "PREF_INDEX"   :  2,
+        "PREF_NAME"    :  "青森県",
+        "AREA_INDEX"   :  2,
+        "AREA_NAME"    :  "東北",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "AOMORI"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "青森",  
+                "LATITUDE"     :  40.82902489582067, 
+                "LONGITUDE"    :  140.73479672524996
+            },
+            "HIROSAKI"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "弘前",  
+                "LATITUDE"     :  40.59931410316323, 
+                "LONGITUDE"    :  140.4852304265451
+            },
+            "HACHINOHE"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "八戸",  
+                "LATITUDE"     :  40.50932343455071, 
+                "LONGITUDE"    :  141.49091191344442
+            }
+        }
+    },
+
+    "3"  :  {
+        "PREF_INDEX"   :  3,
+        "PREF_NAME"    :  "岩手県",
+        "AREA_INDEX"   :  2,
+        "AREA_NAME"    :  "東北",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "MORIOKA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "盛岡",  
+                "LATITUDE"     :  39.70425616207154, 
+                "LONGITUDE"    :  141.13707809646905
+            },
+            "HIROSAKI"  :  {
+                "CITY_INDEX"   :  2, 
+                "CITY_NAME"    :  "一関",   
+                "LATITUDE"     :  38.92657236524155, 
+                "LONGITUDE"    :  141.13761150117955
+            },
+            "HACHINOHE"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "奥州",  
+                "LATITUDE"     :  39.139108673195054, 
+                "LONGITUDE"    :  141.14616118982133
+            }
+        }
+    },
+
+    "4"  :  {
+        "PREF_INDEX"   :  4,
+        "PREF_NAME"    :  "宮城県",
+        "AREA_INDEX"   :  2,
+        "AREA_NAME"    :  "東北",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "SENDAI"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "仙台駅",  
+                "LATITUDE"     :  38.26066262491178,
+                "LONGITUDE"    :  140.88235820157288
+            },
+            "KOKUBUCHO"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "国分町", 
+                "LATITUDE"     :  38.26433905929899,
+                "LONGITUDE"    :  140.868317789502
+            },
+            "ISHINOMAKI"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "石巻",  
+                "LATITUDE"     :  38.435486296159326,
+                "LONGITUDE"    :  141.3034940982194
+            },
+            "OSAKI"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "大崎",  
+                "LATITUDE"     :  38.57479142141134,
+                "LONGITUDE"    :  140.96255165202464
+            },
+            "KESENNUMA"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "気仙沼", 
+                "LATITUDE"     :  38.889837512897785,
+                "LONGITUDE"    :  141.569787418326
+            }
+        }
+    },
+
+    "5"  :  {
+        "PREF_INDEX"   :  5,
+        "PREF_NAME"    :  "秋田県",
+        "AREA_INDEX"   :  2,
+        "AREA_NAME"    :  "東北",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "AKITA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "秋田駅",  
+                "LATITUDE"     :  39.71719820111847,
+                "LONGITUDE"    :  140.12976281431722
+            },
+            "KAWABATA"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "川反",  
+                "LATITUDE"     :  39.71505792458027,
+                "LONGITUDE"    :  140.11584676214488
+            },
+            "YOKOTE"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "横手",  
+                "LATITUDE"     :  39.31054515217859,
+                "LONGITUDE"    :  140.5608036532055
+            },
+            "DAISEN"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "大仙",  
+                "LATITUDE"     :  39.46595072861758,
+                "LONGITUDE"    :  140.479682341498
+            },
+            "OODATE"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "大館",  
+                "LATITUDE"     :  40.289001992542445,
+                "LONGITUDE"    :  140.55688993459992
+            },
+            "YURIHONJO"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "由利本荘",
+                "LATITUDE"     :  39.38703384547799,
+                "LONGITUDE"    :  140.05740880816452
+            }
+        }
+    },
+
+    "6"  :  {
+        "PREF_INDEX"   :  6,
+        "PREF_NAME"    :  "山形県",
+        "AREA_INDEX"   :  2,
+        "AREA_NAME"    :  "東北",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "YAMAGATA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "山形駅", 
+                "LATITUDE"     :  38.25004698433233,
+                "LONGITUDE"    :  140.32717491713282
+            },
+            "NANUKAMACHI"  :  {
+                "CITY_INDEX"   :  2, 
+                "CITY_NAME"    :  "七日町",  
+                "LATITUDE"     :  38.253573562200565,
+                "LONGITUDE"    :  140.34041762624608
+            },
+            "TSURUOKA"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "鶴岡",  
+                "LATITUDE"     :  38.73675469191208,
+                "LONGITUDE"    :  139.82959708313788
+            },
+            "SAKATA"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "酒田",  
+                "LATITUDE"     :  38.922550092324535,
+                "LONGITUDE"    :  139.84588899453377
+            },
+            "YONEZAWA"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "米沢",  
+                "LATITUDE"     :  37.90978984679046,
+                "LONGITUDE"    :  140.1279996092737
+            }
+        }
+    },
+
+    "7"  :  {
+        "PREF_INDEX"   :  7,
+        "PREF_NAME"    :  "福島県",
+        "AREA_INDEX"   :  2,
+        "AREA_NAME"    :  "東北",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "FUKUSHIMA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "福島", 
+                "LATITUDE"     :  37.754434160984786,
+                "LONGITUDE"    :  140.45920394241986
+            },
+            "KORIYAMA"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "郡山", 
+                "LATITUDE"     :  37.39872774580333,
+                "LONGITUDE"    :  140.38839116878313
+            },
+            "IWAKI"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "いわき",
+                "LATITUDE"     :  37.05844495985509,
+                "LONGITUDE"    :  140.89223080027008
+            },
+            "AIZUWAKAMATSU"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "会津若松",
+                "LATITUDE"     :  37.5079933426201,
+                "LONGITUDE"    :  139.93027245344237
+            },
+            "MINAMISOMA"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "南相馬",
+                "LATITUDE"     :  37.63841115559813,
+                "LONGITUDE"    :  140.96873893799236
+            },
+            "SHIRAKAWA"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "白河",  
+                "LATITUDE"     :  37.131659880205,
+                "LONGITUDE"    :  140.21285740219707
+            },
+            "NASUKAWA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "那須川",
+                "LATITUDE"     :  37.30045595106123,
+                "LONGITUDE"    :  140.37210256030855
+            }
+        }
+    },
+
+    "8"  :  {
+        "PREF_INDEX"   :  8,
+        "PREF_NAME"    :  "茨城県",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "MITO"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "水戸",  
+                "LATITUDE"     :  36.37100666035484,
+                "LONGITUDE"    :  140.4762298886147
+            },
+            "TSUKUBA"  :  {
+                "CITY_INDEX"   :  2, 
+                "CITY_NAME"    :  "つくば",   
+                "LATITUDE"     :  36.08378127132669,
+                "LONGITUDE"    :  140.11150866055021
+            },
+            "HITACHI"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "日立",  
+                "LATITUDE"     :  36.590633681438064,
+                "LONGITUDE"    :  140.66181457737216
+            },
+            "TSUCHIURA"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "土浦",  
+                "LATITUDE"     :  36.07901139859788,
+                "LONGITUDE"    :  140.20611180184028
+            },
+            "FURUKAWA"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "古河",  
+                "LATITUDE"     :  36.19483574531546,
+                "LONGITUDE"    :  139.70953939267798
+            },
+            "RYUGASAKI"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "龍ヶ崎", 
+                "LATITUDE"     :  35.93037577391764,
+                "LONGITUDE"    :  140.13824738043814
+            },
+            "KASHIMA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "鹿島・神栖", 
+                "LATITUDE"     :  35.91812686524522,
+                "LONGITUDE"    :  140.63834923328295
+            }
+        }
+    },
+
+    "9"  :  {
+        "PREF_INDEX"   :  9,
+        "PREF_NAME"    :  "栃木県",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "YAMAGATA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "宇都宮駅",
+                "LATITUDE"     :  36.55919252503363,
+                "LONGITUDE"    :  139.89843307762857
+            },
+            "ORION"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "オリオン通り",
+                "LATITUDE"     :  36.560395010581374,
+                "LONGITUDE"    :  139.88280303995757
+            },
+            "KOYAMA"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "小山",  
+                "LATITUDE"     :  36.31337684079062,
+                "LONGITUDE"    :  139.80629572331293
+            },
+            "TOCHIGI"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "栃木",  
+                "LATITUDE"     :  36.37217303195371,
+                "LONGITUDE"    :  139.73138686564718
+            },
+            "ASHIKAGA"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "足利",  
+                "LATITUDE"     :  36.332031515208406,
+                "LONGITUDE"    :  139.45587699759074
+            },
+            "SANO"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "佐野",  
+                "LATITUDE"     :  36.31697108974903,
+                "LONGITUDE"    :  139.57884556875445
+            },
+            "NASUSHIOBARA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "那須塩原",
+                "LATITUDE"     :  36.93240030962208,
+                "LONGITUDE"    :  140.02059044419528
+            },
+            "KANUMA"  :  {
+                "CITY_INDEX"   :  8,
+                "CITY_NAME"    :  "鹿沼",   
+                "LATITUDE"     :  36.57140794158994,
+                "LONGITUDE"    :  139.76306252239456
+            },
+            "NIKKO"  :  {
+                "CITY_INDEX"   :  9,
+                "CITY_NAME"    :  "日光",   
+                "LATITUDE"     :  36.74761131911461,
+                "LONGITUDE"    :  139.62198605342206
+            }
+        }
+    },
+
+    "10"  :  {
+        "PREF_INDEX"   :  10,
+        "PREF_NAME"    :  "群馬県",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "TAKASAKI"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "高崎",   
+                "LATITUDE"     :  36.32305142739829,
+                "LONGITUDE"    :  139.01271594177018
+            },
+            "MAEBASHI"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "前橋",   
+                "LATITUDE"     :  36.39262230118666,
+                "LONGITUDE"    :  139.07101933879807
+            },
+            "OTA"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "太田",   
+                "LATITUDE"     :  36.29421181486467,
+                "LONGITUDE"    :  139.37847346892852
+            },
+            "ISEZAKI"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "伊勢崎", 
+                "LATITUDE"     :  36.32027914842724,
+                "LONGITUDE"    :  139.19502063508804
+            },
+            "KIRYU"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "桐生", 
+                "LATITUDE"     :  36.41136742570672,
+                "LONGITUDE"    :  139.33307590057512
+            }
+        }
+    },
+
+    "11"  :  {
+        "PREF_INDEX"   :  11,
+        "PREF_NAME"    :  "埼玉県",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  true,
+        "CITIES"  :  {
+            "OMIYA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "大宮",   
+                "LATITUDE"     :  35.90709476653886,
+                "LONGITUDE"    :  139.62369400589995
+            },
+            "URAWA"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "浦和",   
+                "LATITUDE"     :  35.858970825329344,
+                "LONGITUDE"    :  139.65742788029348
+            },
+            "KAWAGUCHI"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "川口",   
+                "LATITUDE"     :  35.802136616943756,
+                "LONGITUDE"    :  139.71763318685214
+            },
+            "KAWAGOE"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "川越",   
+                "LATITUDE"     :  35.907144908202035,
+                "LONGITUDE"    :  139.4827743873406
+            },
+            "KUMAGAYA"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "熊谷",   
+                "LATITUDE"     :  36.13958916202913,
+                "LONGITUDE"    :  139.39006558409358
+            },
+            "TOKOROZAWA"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "所沢",   
+                "LATITUDE"     :  35.78712157282437,
+                "LONGITUDE"    :  139.47337183805317
+            },
+            "SAITAMASHINTOSHIN"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "さいたま新都心",
+                "LATITUDE"     :  35.89555406583698,
+                "LONGITUDE"    :  139.63390201843123
+            },
+            "KASUKABE"  :  {
+                "CITY_INDEX"   :  8,
+                "CITY_NAME"    :  "春日部", 
+                "LATITUDE"     :  35.98015944037306,
+                "LONGITUDE"    :  139.75230162641756
+            },
+            "KOSHIGAYA"  :  {
+                "CITY_INDEX"   :  9,
+                "CITY_NAME"    :  "越谷",   
+                "LATITUDE"     :  35.88820879015952,
+                "LONGITUDE"    :  139.78544978564207
+            },
+            "NIZA"  :  {
+                "CITY_INDEX"   :  10,
+                "CITY_NAME"    :  "新座",  
+                "LATITUDE"     :  35.80607191382323,
+                "LONGITUDE"    :  139.55725736063448
+            },
+            "FUKAYA"  :  {
+                "CITY_INDEX"   :  11,
+                "CITY_NAME"    :  "深谷",  
+                "LATITUDE"     :  36.19168013480164,
+                "LONGITUDE"    :  139.28139721195924
+            },
+            "HIGASHIMATSUYAMA"  :  {
+                "CITY_INDEX"   :  12,
+                "CITY_NAME"    :  "東松山",  
+                "LATITUDE"     :  36.035002631895736,
+                "LONGITUDE"    :  139.40177471746404
+            },
+            "SAKADO"  :  {
+                "CITY_INDEX"   :  13,
+                "CITY_NAME"    :  "坂戸",  
+                "LATITUDE"     :  35.95781561486515,
+                "LONGITUDE"    :  139.3941113498554
+            },
+            "HANNO"  :  {
+                "CITY_INDEX"   :  14,
+                "CITY_NAME"    :  "飯能",  
+                "LATITUDE"     :  35.851646265483495,
+                "LONGITUDE"    :  139.31909829912
+            }
+        }
+    },
+
+    "12"  :  {
+        "PREF_INDEX"   :  12,
+        "PREF_NAME"    :  "千葉県",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  true,
+        "CITIES"  :  {
+            "CHIBA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "千葉駅", 
+                "LATITUDE"     :  35.61329530629072,
+                "LONGITUDE"    :  140.11329224886563
+            },
+            "FUNABASHI"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "船橋",  
+                "LATITUDE"     :  35.700157581668975,
+                "LONGITUDE"    :  139.98522853545884
+            },
+            "ICHIKAWA"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "市川",  
+                "LATITUDE"     :  35.72919931920788,
+                "LONGITUDE"    :  139.90767254487213
+            },
+            "KASHIWA"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "柏",    
+                "LATITUDE"     :  35.86228899879635,
+                "LONGITUDE"    :  139.97095445056638
+            },
+            "KASAI"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "葛西・浦安",
+                "LATITUDE"     :  35.66353630730131,
+                "LONGITUDE"    :  139.8725143122623
+            },
+            "KISARAZU"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "木更津", 
+                "LATITUDE"     :  35.38173179901176,
+                "LONGITUDE"    :  139.92650749206328
+            },
+            "TATEYAMA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "館山",  
+                "LATITUDE"     :  34.99616859841696,
+                "LONGITUDE"    :  139.86190037639653
+            },
+            "KAMOGAWA"  :  {
+                "CITY_INDEX"   :  8,
+                "CITY_NAME"    :  "鴨川",  
+                "LATITUDE"     :  35.10764690593737,
+                "LONGITUDE"    :  140.10352448036522
+            },
+            "SAKURA"  :  {
+                "CITY_INDEX"   :  9,
+                "CITY_NAME"    :  "佐倉",  
+                "LATITUDE"     :  35.709984782674056,
+                "LONGITUDE"    :  140.2259719383062
+            },
+            "NARITA"  :  {
+                "CITY_INDEX"   :  10,
+                "CITY_NAME"    :  "成田",  
+                "LATITUDE"     :  35.77802058237116,
+                "LONGITUDE"    :  140.3140737652833
+            },
+            "CHOSHI"  :  {
+                "CITY_INDEX"   :  11,
+                "CITY_NAME"    :  "銚子",  
+                "LATITUDE"     :  35.730269909967646,
+                "LONGITUDE"    :  140.82736958002968
+            }
+        }
+    },
+
+    "13"  :  {
+        "PREF_INDEX"   :  13,
+        "PREF_NAME"    :  "東京都",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  true, 
+        "CITIES"  :  {
+            "SHINJUKU"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "新宿", 
+                "LATITUDE"     :  35.689904097355935,
+                "LONGITUDE"    :  139.70053863642784
+            },
+            "SHIBUYA"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "渋谷・原宿・表参道",
+                "LATITUDE"     :  35.658234377718486,
+                "LONGITUDE"    :  139.70164652640923
+            },
+            "IKEBUKURO"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "池袋", 
+                "LATITUDE"     :  35.7296856791823,
+                "LONGITUDE"    :  139.71092155524713
+            },
+            "SHINOKUBO"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "新大久保・高田馬場",
+                "LATITUDE"     :  35.70665324242551,
+                "LONGITUDE"    :  139.70104142774105
+            },
+            "TOKYO"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "東京・日本橋・銀座",
+                "LATITUDE"     :  35.67708309718654,
+                "LONGITUDE"    :  139.76564521654527
+            },
+            "UENO"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "上野・日暮里",
+                "LATITUDE"     :  35.714680645259456,
+                "LONGITUDE"    :  139.7774045591957
+            },
+            "KANDA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "神田・秋葉原・浅草橋",
+                "LATITUDE"     :  35.69595084172352,
+                "LONGITUDE"    :  139.77504486773194
+            },
+            "SHINBASHI"  :  {
+                "CITY_INDEX"   :  8,
+                "CITY_NAME"    :  "新橋・汐留・虎ノ門",
+                "LATITUDE"     :  35.66665355945012,
+                "LONGITUDE"    :  139.75843061068954
+            },
+            "TAMACHI"  :  {
+                "CITY_INDEX"   :  9,
+                "CITY_NAME"    :  "田町・三田",
+                "LATITUDE"     :  35.64568997841622,
+                "LONGITUDE"    :  139.7469509374716
+            },
+            "SHINAGAWA"  :  {
+                "CITY_INDEX"   :  10,
+                "CITY_NAME"    :  "品川・高輪・天王洲アイル",
+                "LATITUDE"     :  35.62954686822709,
+                "LONGITUDE"    :  139.73870675489903
+            },
+            "EBISU"  :  {
+                "CITY_INDEX"   :  11,
+                "CITY_NAME"    :  "恵比寿・中目黒・代官山",
+                "LATITUDE"     :  35.64668543606261,
+                "LONGITUDE"    :  139.70845366211233
+            },
+            "MEGURO"  :  {
+                "CITY_INDEX"   :  12,
+                "CITY_NAME"    :  "目黒・五反田",
+                "LATITUDE"     :  35.63007998839129,
+                "LONGITUDE"    :  139.71709472988513
+            },
+            "YOTSUYA"  :  {
+                "CITY_INDEX"   :  13,
+                "CITY_NAME"    :  "四ツ谷・市ヶ谷・麹町",
+                "LATITUDE"     :  35.68833099236024,
+                "LONGITUDE"    :  139.7337517460862
+            },
+            "IDABASHI"  :  {
+                "CITY_INDEX"   :  14,
+                "CITY_NAME"    :  "飯田橋・水道橋・九段下",
+                "LATITUDE"     :  35.699161958151365,
+                "LONGITUDE"    :  139.74952831998255
+            },
+            "ROPPONGI"  :  {
+                "CITY_INDEX"   :  15,
+                "CITY_NAME"    :  "六本木・青山・麻布・赤坂",
+                "LATITUDE"     :  35.67000234660899,
+                "LONGITUDE"    :  139.73320951883736
+            },
+            "KINSHICHO"  :  {
+                "CITY_INDEX"   :  16,
+                "CITY_NAME"    :  "錦糸町・亀戸",
+                "LATITUDE"     :  35.697935345162875,
+                "LONGITUDE"    :  139.81394732351745
+            },
+            "SENJU"  :  {
+                "CITY_INDEX"   :  17,
+                "CITY_NAME"    :  "北千住・南千住",
+                "LATITUDE"     :  35.74338517499968,
+                "LONGITUDE"    :  139.79719238487982
+            },
+            "SHIMOKITAZAWA"  :  {
+                "CITY_INDEX"   :  18,
+                "CITY_NAME"    :  "下北沢・明大前",
+                "LATITUDE"     :  35.66402255375642,
+                "LONGITUDE"    :  139.65570765365536
+            },
+            "JIYUGAOKA"  :  {
+                "CITY_INDEX"   :  19,
+                "CITY_NAME"    :  "自由が丘",
+                "LATITUDE"     :  35.6075014132174,
+                "LONGITUDE"    :  139.66697148417987
+            },
+            "OGIKUBO"  :  {
+                "CITY_INDEX"   :  20,
+                "CITY_NAME"    :  "荻窪・阿佐ヶ谷・高円寺",
+                "LATITUDE"     :  35.70681198843564,
+                "LONGITUDE"    :  139.6360403303917
+            },
+            "MITAKA"  :  {
+                "CITY_INDEX"   :  21,
+                "CITY_NAME"    :  "三鷹・吉祥寺",
+                "LATITUDE"     :  35.70504918210394,
+                "LONGITUDE"    :  139.56125769344476
+            },
+            "TACHIKAWA"  :  {
+                "CITY_INDEX"   :  22,
+                "CITY_NAME"    :  "立川・国立・国分寺",
+                "LATITUDE"     :  35.69915340495286,
+                "LONGITUDE"    :  139.44259366669996
+            },
+            "HACHIOJI"  :  {
+                "CITY_INDEX"   :  23,
+                "CITY_NAME"    :  "八王子", 
+                "LATITUDE"     :  35.661117719082256,
+                "LONGITUDE"    :  139.33242459886472
+            },
+            "FUCHU"  :  {
+                "CITY_INDEX"   :  24,
+                "CITY_NAME"    :  "府中・調布",
+                "LATITUDE"     :  35.667284163935605,
+                "LONGITUDE"    :  139.51164099630972
+            },
+            "MACHIDA"  :  {
+                "CITY_INDEX"   :  25,
+                "CITY_NAME"    :  "町田", 
+                "LATITUDE"     :  35.54236334958866,
+                "LONGITUDE"    :  139.44172959296316
+            },
+            "AKABANE"  :  {
+                "CITY_INDEX"   :  26,
+                "CITY_NAME"    :  "赤羽", 
+                "LATITUDE"     :  35.779897948946086,
+                "LONGITUDE"    :  139.7217431171495
+            }
+        }
+    },
+
+    "14"  :  {
+        "PREF_INDEX"   :  14,
+        "PREF_NAME"    :  "神奈川県",
+        "AREA_INDEX"   :  3,
+        "AREA_NAME"    :  "関東",
+        "RUNNING"      :  true,
+        "CITIES"  :  {
+            "YOKOHAMA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "横浜・みなとみらい",
+                "LATITUDE"     :  35.466704231399426,
+                "LONGITUDE"    :  139.62204297038315
+            },
+            "SAKURAGICHO"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "桜木町・関内",
+                "LATITUDE"     :  35.44715143997429,
+                "LONGITUDE"    :  139.631685607889
+            },
+            "MOTOMACHI"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "元町・中華街",
+                "LATITUDE"     :  35.44282374811852,
+                "LONGITUDE"    :  139.6495502330667
+            },
+            "KAWASAKI"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "川崎",
+                "LATITUDE"     :  35.531882572624944,
+                "LONGITUDE"    :  139.69685586187225
+            },
+            "HIYOSHI"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "日吉",  
+                "LATITUDE"     :  35.55335272455056,
+                "LONGITUDE"    :  139.6468349799074
+            },
+            "MUSASHIKOSUGI"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "武蔵小杉",
+                "LATITUDE"     :  35.57691785542183,
+                "LONGITUDE"    :  139.65937955814792
+            },
+            "YOKOSUKA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "横須賀",  
+                "LATITUDE"     :  35.284798462082875,
+                "LONGITUDE"    :  139.6557306233637
+            },
+            "KAMAKURA"  :  {
+                "CITY_INDEX"   :  8,
+                "CITY_NAME"    :  "鎌倉",  
+                "LATITUDE"     :  35.319182878041445,
+                "LONGITUDE"    :  139.55042546274612
+            },
+            "FUJISAWA"  :  {
+                "CITY_INDEX"   :  9,
+                "CITY_NAME"    :  "藤沢",  
+                "LATITUDE"     :  35.341176469368435,
+                "LONGITUDE"    :  139.4872808827153
+            },
+            "CHIGASAKI"  :  {
+                "CITY_INDEX"   :  10,
+                "CITY_NAME"    :  "茅ヶ崎",  
+                "LATITUDE"     :  35.33032664079127,
+                "LONGITUDE"    :  139.40655851641284
+            },
+            "HIRATSUKA"  :  {
+                "CITY_INDEX"   :  11,
+                "CITY_NAME"    :  "平塚",   
+                "LATITUDE"     :  35.32789037633892,
+                "LONGITUDE"    :  139.35044376626269
+            },
+            "ODAWARA"  :  {
+                "CITY_INDEX"   :  12,
+                "CITY_NAME"    :  "小田原", 
+                "LATITUDE"     :  35.2568478535923,
+                "LONGITUDE"    :  139.15535165063918
+            },
+            "ATSUGI"  :  {
+                "CITY_INDEX"   :  13,
+                "CITY_NAME"    :  "厚木・海老名",
+                "LATITUDE"     :  35.44334106388751,
+                "LONGITUDE"    :  139.38230832167403
+            },
+            "HASHIMOTO"  :  {
+                "CITY_INDEX"   :  14,
+                "CITY_NAME"    :  "橋本・相模原",
+                "LATITUDE"     :  35.59494786667115,
+                "LONGITUDE"    :  139.34471840509164
+            }
+        }
+    },
+
+    "15"  :  {
+        "PREF_INDEX"   :  15,
+        "PREF_NAME"    :  "新潟県",
+        "AREA_INDEX"   :  4,
+        "AREA_NAME"    :  "中部",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "NIIGATA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "新潟駅",  
+                "LATITUDE"     :  37.91227578727931, 
+                "LONGITUDE"    :  139.06178572645072
+            },
+            "NAGAOKA"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "長岡駅",  
+                "LATITUDE"     :  37.448188592062266, 
+                "LONGITUDE"    :  138.85404669768658
+            },
+            "ITOIGAWA"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "糸魚川駅",  
+                "LATITUDE"     :  37.04372997710973, 
+                "LONGITUDE"    :  137.86161279795624
+            }
+        }
+    },
+    "16"  :  {
+        "PREF_INDEX"   :  16,
+        "PREF_NAME"    :  "富山県",
+        "AREA_INDEX"   :  4,
+        "AREA_NAME"    :  "中部",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "TOYAMA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "富山",  
+                "LATITUDE"     :  36.7019988180769, 
+                "LONGITUDE"    :  137.21258288260861
+            },
+            "SAKURAGICHO"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "桜木町",  
+                "LATITUDE"     :  36.69385431509163, 
+                "LONGITUDE"    :  137.2148028131057
+            },
+            "TAKAOKA"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "高岡",  
+                "LATITUDE"     :  36.741398742795276, 
+                "LONGITUDE"    :  137.0154822685235
+            }
+        }
+    },
+    "17"  :  {
+        "PREF_INDEX"   :  17,
+        "PREF_NAME"    :  "石川県",
+        "AREA_INDEX"   :  4,
+        "AREA_NAME"    :  "中部",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "KANAZAWA"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "金沢",  
+                "LATITUDE"     :  36.57819678604522, 
+                "LONGITUDE"    :  136.64824966697313
+            },
+            "KOURINBOU"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "香林坊",  
+                "LATITUDE"     :  36.56354583810701, 
+                "LONGITUDE"    :  136.6535178262312
+            },
+            "KATAMACHI"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "片町",  
+                "LATITUDE"     :  36.56011878844734, 
+                "LONGITUDE"    :  136.65208015218877
+            },
+            "KOMATSU"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "小松",  
+                "LATITUDE"     :  36.402830873753935, 
+                "LONGITUDE"    :  136.4527558960971
+            }
+        }
+    },
+    "18"  :  {
+        "PREF_INDEX"   :  18,
+        "PREF_NAME"    :  "福井県",
+        "AREA_INDEX"   :  4,
+        "AREA_NAME"    :  "中部",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "HUKUI"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "福井",  
+                "LATITUDE"     :  36.06239627618192, 
+                "LONGITUDE"    :  136.22345976931558
+            },
+            "TSURUGA"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "敦賀",  
+                "LATITUDE"     :  35.645036349392065, 
+                "LONGITUDE"    :  136.076282784667
+            },
+            "TAKEHU"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "武生",  
+                "LATITUDE"     :  35.903610867734756, 
+                "LONGITUDE"    :  136.17085144500103
+            }
+        }
+    },
+    "19"  :  {
+        "PREF_INDEX"   :  19,
+        "PREF_NAME"    :  "山梨県",
+        "AREA_INDEX"   :  5,
+        "AREA_NAME"    :  "中部",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "KOUHU"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "甲府",  
+                "LATITUDE"     :  35.66686427919149, 
+                "LONGITUDE"    :  138.56884746890444
+            },
+            "OTSUKI"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "大月",  
+                "LATITUDE"     :  35.61338692370746, 
+                "LONGITUDE"    :  138.94269441104964
+            },
+            "ISAWAONSEN"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "石和温泉",  
+                "LATITUDE"     :  35.65770752683323, 
+                "LONGITUDE"    :  138.63533067725336
+            },
+            "HUZISAN"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "富士山",  
+                "LATITUDE"     :  35.48354226979487, 
+                "LONGITUDE"    :  138.79570541149474
+            },
+            "GEKKOUZI"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "月江寺",  
+                "LATITUDE"     :  35.49316559657095, 
+                "LONGITUDE"    :  138.79803213066305
+            },
+            "TSURUBUNKADAIGAKUMAE"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "都留文科大学前",  
+                "LATITUDE"     :  35.54248659238343, 
+                "LONGITUDE"    :  138.8965046927895
+            }
+        }
+    },
+    "20"  :  {
+        "PREF_INDEX"   :  20,
+        "PREF_NAME"    :  "長野県",
+        "AREA_INDEX"   :  5,
+        "AREA_NAME"    :  "中部",
+        "RUNNING"      :  false,
+        "CITIES"  :  {
+            "NAGANO"  :  {
+                "CITY_INDEX"   :  1,
+                "CITY_NAME"    :  "長野",  
+                "LATITUDE"     :  36.6431217263671, 
+                "LONGITUDE"    :  138.1878072265338
+            },
+            "GONDOU"  :  {
+                "CITY_INDEX"   :  2,
+                "CITY_NAME"    :  "権堂",  
+                "LATITUDE"     :  36.652968531053745, 
+                "LONGITUDE"    :  138.1921610716732
+            },
+            "MATSUMOTO"  :  {
+                "CITY_INDEX"   :  3,
+                "CITY_NAME"    :  "松本",  
+                "LATITUDE"     :  35.65770752683323, 
+                "LONGITUDE"    :  138.63533067725336
+            },
+            "UEDA"  :  {
+                "CITY_INDEX"   :  4,
+                "CITY_NAME"    :  "上田",  
+                "LATITUDE"     :  36.39679846600158, 
+                "LONGITUDE"    :  138.24968152897057
+            },
+            "SHIOJIRI"  :  {
+                "CITY_INDEX"   :  5,
+                "CITY_NAME"    :  "塩尻",  
+                "LATITUDE"     :  36.114472575707616, 
+                "LONGITUDE"    :  137.94787413701667
+            },
+            "IIDA"  :  {
+                "CITY_INDEX"   :  6,
+                "CITY_NAME"    :  "飯田",  
+                "LATITUDE"     :  35.51963594156824, 
+                "LONGITUDE"    :  137.82125197462486
+            },
+            "KAMISUWA"  :  {
+                "CITY_INDEX"   :  7,
+                "CITY_NAME"    :  "上諏訪",  
+                "LATITUDE"     :  36.04693894099805, 
+                "LONGITUDE"    :  138.11624132617237
+            }
+        }
+    }
+}

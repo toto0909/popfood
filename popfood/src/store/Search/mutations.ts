@@ -4,15 +4,56 @@ import { SearchParams } from '../types';
 const mutations: MutationTree<SearchParams> = {
     //ここにmutations関数を作成
     //アロー関数例
-    setPrefecture: (state:SearchParams, value: string) => {
+    updateKeyword: (state:SearchParams, value: string) => {
+        state.keyword = value
+    },
+    updatePrefecture: (state:SearchParams, value: string) => {
         state.prefecture = value
     },
-    setLargeArea: (state:SearchParams, value: string) => {
+    updateLargeArea: (state:SearchParams, value: string) => {
         state.large_area = value
     },
-    setMiddleArea: (state:SearchParams, value: string) => {
-        state.middle_area = value
-    }
+    //検索中エリアを1つ追加
+    addMiddleArea: (state:SearchParams, value: string) => {
+        state.middle_area.push(value)
+    },
+    //検索中エリアを1つ削除
+
+    updateFreeDrink: (state:SearchParams, value: boolean) => {
+        state.free_drink = value
+    },
+    updateFreeFood: (state:SearchParams, value: boolean) => {
+        state.free_food = value
+    },
+    updatePrivateRoom: (state:SearchParams, value: boolean) => {
+        state.private_room = value
+    },
+    updateParking: (state:SearchParams, value: boolean) => {
+        state.parking = value
+    },
+    updateCard: (state:SearchParams, value: boolean) => {
+        state.card = value
+    },
+    updateCharter: (state:SearchParams, value: boolean) => {
+        state.charter = value
+    },
+    updateMidnight: (state:SearchParams, value: boolean) => {
+        state.midnight = value
+    },
+    updateChild: (state:SearchParams, value: boolean) => {
+        state.child = value
+    },
+    updatePet: (state:SearchParams, value: boolean) => {
+        state.pet = value
+    },
+    // 検索用クエリを更新する時に呼び出す(固定条件検索では呼び出さない)
+    updateQuery: (state:SearchParams, value: string) => {
+        state.query = value
+    },
+    // 条件設定中のフラグ更新
+    updateSetting: (state:SearchParams, value: boolean) => {
+        state.setting = value
+    },
 }
 
 export default mutations
