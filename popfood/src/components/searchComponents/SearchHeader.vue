@@ -1,7 +1,7 @@
 <template>
     <!--SP版-->
     <div v-if="$vuetify.breakpoint.xs">
-        <v-container>
+        <v-container fluid>
             <div style="margin-top: 0.5rem;">
                 <v-row class="text-center">
                     <!--検索条件設定シート開閉ボタン = 押すと設定ダイアログが表示される-->
@@ -54,6 +54,13 @@
                 </v-row>
             </div>
         </v-container>
+
+        <!--設定項目の表示-->
+
+        <!--メニュータブ-->
+        <v-container style="padding-top:0; padding-left:0; padding-right:0;">
+            <SearchMenu />
+        </v-container>
     </div>
 
     <!--PC版-->
@@ -64,11 +71,13 @@
 <script lang="ts">
 import Vue from 'vue'
 import SearchOption from '@/components/searchComponents/SearchOption.vue'
+import SearchMenu from '@/components/searchComponents/SearchMenu.vue'
 
 export default Vue.extend({
     name: 'SearchHeader',
     components: {
-        SearchOption
+        SearchOption,
+        SearchMenu
     },
     data: () => ({
         dialog: false

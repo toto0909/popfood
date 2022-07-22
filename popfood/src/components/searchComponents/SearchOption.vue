@@ -17,7 +17,7 @@
             </div>
 
             <!--都道府県選択-->
-            <div class="step">
+            <div class="step" style="padding-top: 0">
                 <v-select
                     v-model="large_area"
                     :items="PREFECTURE_NAME_ARRAY"
