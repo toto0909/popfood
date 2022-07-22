@@ -5,7 +5,7 @@
             <div style="margin-top: 0.5rem;">
                 <v-row class="text-center">
                     <!--検索条件設定シート開閉ボタン = 押すと設定ダイアログが表示される-->
-                    <v-col cols="5">
+                    <v-col cols="5" style="padding-bottom: 0.5rem;">
                         <div>
                             <v-dialog
                             v-model="dialog"
@@ -36,7 +36,7 @@
                     </v-col>
 
                     <!--位置情報取得ボタン-->
-                    <v-col cols="5">
+                    <v-col cols="5" style="padding-bottom: 0.5rem;">
                         <div class="">
                             <v-btn rounded block color=#afd147 style="text-transform: none; font-size: 0.7rem; font-weight: 500; color: #FFFFFF" class="text-center">
                                 <span>位置情報を利用　</span>
@@ -46,7 +46,7 @@
                     </v-col>
 
                     <!--オプションメニュー-->
-                    <v-col cols="2">
+                    <v-col cols="2" style="padding-bottom: 0.5rem;">
                         <v-btn icon>
                             <v-icon>mdi-dots-vertical</v-icon>
                         </v-btn>
@@ -55,7 +55,25 @@
             </div>
         </v-container>
 
-        <!--設定項目の表示-->
+        <!--設定項目の表示 ※※※ watchして常時更新 ※※※ -->
+        <v-container v-if="options.length > 0" style="padding:0;">
+            <ul class="horizontal-list" style="padding-left: 1rem;">
+                <li v-for="option in options" :key="option" class="item">
+                    <v-sheet
+                    class="text-center"
+                    style="font-size: 0.8rem;"
+                    color="white"
+                    elevation="2"
+                    height=1rem;
+                    rounded
+                    >
+                        <p style="color:#888888; margin-bottom:0; padding-left: 1rem; padding-right: 1rem; padding-top: 0.3rem; padding-bottom: 0.3rem;">
+                            {{option}}
+                        </p>
+                    </v-sheet>
+                </li>
+            </ul>
+        </v-container>
 
         <!--メニュータブ-->
         <v-container style="padding-top:0; padding-left:0; padding-right:0;">
@@ -80,8 +98,89 @@ export default Vue.extend({
         SearchMenu
     },
     data: () => ({
-        dialog: false
-    })
+        dialog: false,
+        options: [] as string[] //オプション選択された内容(文字列配列)
+    }),
+    methods: {
+        /*
+            メモ
+            検索条件の文字列配列を生成するメソッド
+            data() => options[]に格納する
+            ※watchを使ってvuex/stateに更新が入る度に起動
+            ※正確にはcomputedでこのmethod(createOptionTabs)を起動させるが、そのcomuputedをwatchで監視する。結果的にvuexのstateを監視できる？
+            ※各条件(項目)をvuex/gettersから取得して該当項目がある場合に配列に格納する
+        */
+        createOptionTabs : function() : void {
+            this.options = [] //初期化
+            //都道府県
+            if(this.$store.getters['search/getPrefecture']){
+                this.options.push(this.$store.getters['search/getPrefecture'])
+            }
+            //地域(TODO コードから地名に変換して格納 文字数は最大10とする)
+            if(this.$store.getters['search/getMiddleArea'].length > 0){
+                //TODO
+            }
+            //ジャンル(TODO コードからジャンル名に変換して格納 文字数は最大10とする)
+            if(this.$store.getters['search/getGenre'].length > 0){
+                //TODO
+            }
+            //キーワード
+            if(this.$store.getters['search/getKeyword']) {
+                this.options.push(this.$store.getters['search/getKeyword'])
+            }
+            //飲み放題
+            if(this.$store.getters['search/getFreeDrink']) {
+                this.options.push('飲み放題')
+            }
+            //食べ放題
+            if(this.$store.getters['search/getFreeFood']) {
+                this.options.push('食べ放題')
+            }
+            //個室
+            if(this.$store.getters['search/getPrivateRoom']) {
+                this.options.push('個室あり')
+            }
+            //駐車場
+            if(this.$store.getters['search/getParking']) {
+                this.options.push('駐車場あり')
+            }
+            //カード
+            if(this.$store.getters['search/getCard']) {
+                this.options.push('カード可能')
+            }
+            //貸切
+            if(this.$store.getters['search/getCharter']) {
+                this.options.push('貸し切り')
+            }
+            //23時以降
+            if(this.$store.getters['search/getMidnight']) {
+                this.options.push('23時以降営業')
+            }
+            //子連れ
+            if(this.$store.getters['search/getChild']) {
+                this.options.push('お子様連れOK')
+            }
+            //ペット
+            if(this.$store.getters['search/getPet']) {
+                this.options.push('ペットOK')
+            }
+        }
+    },
+    computed : {
+        // options[]を取得
+        searchState: function() {
+            this.createOptionTabs()
+            return this.options
+        }
+    },
+    watch : {
+        // computedのsearchStateを監視、vuexの条件更新を監視する => 更新があった場合条件一覧タブを再描画
+        searchState() {
+            this.$nextTick(() => {
+            console.log('変更されました')
+            })
+        }
+    }
 })
 </script>
 
@@ -89,4 +188,31 @@ export default Vue.extend({
 .option-button{
     font-size: 0.7rem;
 }
+/* 横スクロール用-- */
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: auto;
+    scrollbar-color: transparent transparent;
+    }
+.horizontal-list::-webkit-scrollbar {
+    height: 0px;
+    display: none;
+}
+.horizontal-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+.horizontal-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+.horizontal-list::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0);
+}
+.item {
+    display: inline-block;
+    margin: 5px;
+    background: transparent;
+}
+/* --横スクロール用 */
 </style>

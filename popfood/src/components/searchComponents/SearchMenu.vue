@@ -1,7 +1,7 @@
 <template>
     <!--SP版の検索メニュータブ 通常/周辺検索/ラーメンなどを切り替える-->
     <div>
-        <v-card class="rounded-0" style="padding-top: 0.4rem;" flat>
+        <v-card class="rounded-0" style="padding-top: 0rem;" flat>
             <v-tabs v-model="tab" background-color=#FFFFFF color=#AFD147 centered light>
                 <v-tabs-slider></v-tabs-slider>
 

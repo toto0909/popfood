@@ -260,6 +260,7 @@ export default Vue.extend({
             if(this.pet) {
                 this.query = this.query + '&pet=1'
             }
+            this.commitQuery()
         },
 
         /*
@@ -307,7 +308,7 @@ export default Vue.extend({
 <style scoped>
 #option{
     background-color: #EEEEEE;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 .area{
     background-color: #FFFFFF;
