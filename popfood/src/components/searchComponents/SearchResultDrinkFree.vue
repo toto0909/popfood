@@ -20,12 +20,9 @@ export default Vue.extend({
             クエリをもとに検索するメソッド
         */
     },
-    mounted: function(){
-        console.log('テスト')
-    },
     computed: {
         // vuexから最新のクエリを取得
-        // 強制的に"飲み放題あり : free_drink = 1"にして返す
+        // 強制的に"飲み放題あり : 必ずfree_drink = 1"にして返す
         getQuery: function(): string {
             let query_drink_free: string = this.$store.getters['search/getQuery']
             if(!query_drink_free.includes('&free_drink')){

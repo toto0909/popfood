@@ -25,4 +25,5 @@ export interface SearchParams {
     child : boolean;       //子連れ可能(1:絞り込みあり)
     pet : boolean;         //ペット可能(1:絞り込みあり)
     query : string;        //検索用クエリー
+    setting : boolean;     //条件設定中のフラグ OFF->ONになった時API叩く
 }

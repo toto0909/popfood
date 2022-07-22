@@ -15,7 +15,8 @@
                             >
                                 <template v-slot:activator="{ on, attrs }">
                                     <!--開閉ボタン-->
-                                    <v-btn v-bind="attrs" v-on="on" rounded block outlined color=#888888 style="text-transform: none; font-size: 0.7rem; font-weight: 500;" class="text-center">
+                                    <v-btn v-bind="attrs" v-on="on" rounded block outlined color=#888888 style="text-transform: none; font-size: 0.7rem; font-weight: 500;" class="text-center"
+                                        @click="setSettingStateTrue()">
                                         <span>検索条件を設定　</span>
                                         <span><v-icon style="font-size: 1.0rem;">mdi-magnify-plus-outline</v-icon></span>
                                     </v-btn>
@@ -23,7 +24,7 @@
                                 <!--ダイアログ中身 開閉部分のみ(内容は別ファイル)-->
                                 <v-card>
                                     <v-toolbar flat color=#FFFFFF>
-                                        <v-btn icon @click="dialog = false"> <!--TODO ここ閉じたら再検索-->
+                                        <v-btn icon @click="dialog = false, setSettingStateFalse()"> <!--TODO ここ閉じたら再検索-->
                                             <v-icon style="color: #888888;">mdi-close-circle-outline</v-icon>
                                         </v-btn>
                                         <v-toolbar-title style="font-size: 1.0rem; color: #888888;">検索条件を設定</v-toolbar-title>
@@ -99,6 +100,7 @@ export default Vue.extend({
     },
     data: () => ({
         dialog: false,
+        setting: false,         //オプション設定画面を開いているかのフラグ
         options: [] as string[] //オプション選択された内容(文字列配列)
     }),
     methods: {
@@ -164,6 +166,12 @@ export default Vue.extend({
             if(this.$store.getters['search/getPet']) {
                 this.options.push('ペットOK')
             }
+        },
+        setSettingStateTrue: function(): void {
+            this.$store.commit('search/updateSetting', true)
+        },
+        setSettingStateFalse: function(): void {
+            this.$store.commit('search/updateSetting', false)
         }
     },
     computed : {
@@ -171,11 +179,20 @@ export default Vue.extend({
         searchState: function(): string[] {
             this.createOptionTabs()
             return this.options
+        },
+        // setting(条件設定画面が開かれているか)フラグを取得
+        getSettingState: function(): boolean {
+            return this.$store.getters['search/getSetting'] //条件設定中フラグ取得
         }
     },
     watch : {
         // computedのsearchStateを監視、vuexの条件更新を監視する => 更新があった場合条件一覧タブを再描画
         searchState() {
+            this.$nextTick(() => {
+            })
+        },
+        // computedのgetSettingStateを監視
+        getSettingState(){
             this.$nextTick(() => {
             })
         }

@@ -23,7 +23,8 @@ const state: SearchParams = {
     midnight: false,
     child: false,
     pet: false,
-    query: ""
+    query: "",
+    setting: false,
 }
 
 export const search: Module<SearchParams, RootState> = {

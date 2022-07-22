@@ -8,7 +8,6 @@
                     dense
                     rounded
                     v-model="keyword"
-                    @change="setKeyword(keyword)"
                     outlined
                     label="検索キーワード"
                     prepend-inner-icon="mdi-magnify"
@@ -40,7 +39,6 @@
                 <v-checkbox
                     v-model="free_drink"
                     :label="'飲み放題あり'"
-                    @change="setFreeDrink(free_drink)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -48,7 +46,6 @@
                 <v-checkbox
                     v-model="free_food"
                     :label="'食べ放題あり'"
-                    @change="setFreeFood(free_food)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -56,7 +53,6 @@
                 <v-checkbox
                     v-model="private_room"
                     :label="'個室あり'"
-                    @change="setPrivateRoom(private_room)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -64,7 +60,6 @@
                 <v-checkbox
                     v-model="parking"
                     :label="'駐車場あり'"
-                    @change="setParking(parking)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -72,7 +67,6 @@
                 <v-checkbox
                     v-model="card"
                     :label="'カード利用可能'"
-                    @change="setCard(card)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -80,7 +74,6 @@
                 <v-checkbox
                     v-model="charter"
                     :label="'貸切利用可能'"
-                    @change="setCharter(charter)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -88,7 +81,6 @@
                 <v-checkbox
                     v-model="midnight"
                     :label="'23時以降営業'"
-                    @change="setMidnight(midnight)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -96,7 +88,6 @@
                 <v-checkbox
                     v-model="child"
                     :label="'お子様連れOK'"
-                    @change="setChild(child)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -104,7 +95,6 @@
                 <v-checkbox
                     v-model="pet"
                     :label="'ペット可'"
-                    @change="setPet(pet)"
                     color=#afd147
                     style="margin-top: 0;"
                 ></v-checkbox>
@@ -162,62 +152,38 @@ export default Vue.extend({
         this.pet = this.$store.getters['search/getPet']
         this.createQuery() //クエリ更新(初期クエリの生成)
     },
-    methods:{
-        // キーワード設定(String型) / vuex更新 / 検索クエリ更新
-        setKeyword : function(keyword: string): void {
-            this.$store.commit('search/updateKeyword', keyword) //vuex更新
-            this.createQuery() //クエリ更新
-        },
-        // 飲み放題設定(bool型) / vuex更新 / 検索クエリ更新
-        setFreeDrink : function(drink: boolean): void {
-            this.$store.commit('search/updateFreeDrink', drink)
-            this.createQuery()
-        },
-        // 食べ放題設定(bool型) / vuex更新 / 検索クエリ更新
-        setFreeFood : function(food: boolean): void {
-            this.$store.commit('search/updateFreeFood', food)
-            this.createQuery()
-        },
-        // 個室設定(bool型) / vuex更新 / 検索クエリ更新
-        setPrivateRoom : function(room: boolean): void {
-            this.$store.commit('search/updatePrivateRoom', room)
-            this.createQuery()
-        },
-        // 駐車場設定(bool型) / vuex更新 / 検索クエリ更新
-        setParking : function(parking: boolean): void {
-            this.$store.commit('search/updateParking', parking)
-            this.createQuery()
-        },
-        // カード利用設定(bool型) / vuex更新 / 検索クエリ更新
-        setCard : function(card: boolean): void {
-            this.$store.commit('search/updateCard', card)
-            this.createQuery()
-        },
-        // 貸切利用設定(bool型) / vuex更新 / 検索クエリ更新
-        setCharter : function(usable: boolean): void {
-            this.$store.commit('search/updateCharter', usable)
-            this.createQuery()
-        },
-        // 23時以降利用設定(bool型) / vuex更新 / 検索クエリ更新
-        setMidnight : function(usable: boolean): void {
-            this.$store.commit('search/updateMidnight', usable)
-            this.createQuery()
-        },
-        // 子連れ利用設定(bool型) / vuex更新 / 検索クエリ更新
-        setChild : function(child: boolean): void {
-            this.$store.commit('search/updateChild', child)
-            this.createQuery()
-        },
-        // ペット利用設定(bool型) / vuex更新 / 検索クエリ更新
-        setPet : function(pet: boolean): void {
-            this.$store.commit('search/updatePet', pet)
-            this.createQuery()
-        },
-
+    computed:{
         /*
-            クエリ作成メソッド(値を変更する度に呼び出される)
-            都度query_baseの初期値を元に再生成される
-            ※あくまでオプションページ内のdata()を変更するのみ。vuex更新は別メソッド
+            条件設定中フラグ(state = setting: bool)を取得する
+            この画面が開かれている間は必ずtrueになるはず
+            下のwatchでfalseになる瞬間(設定画面が閉じる瞬間)にvuexとの同期をまとめて行う
+         */
+        getSettingState: function(): boolean {
+            return this.$store.getters['search/getSetting']
+        }
+    },
+    watch:{
+        //state = setting: boolの変更を監視 => falseになる瞬間(設定画面が閉じる瞬間)にvuexとの同期をまとめて行う
+        getSettingState(){
+            this.$store.commit('search/updateKeyword', this.keyword)
+            this.$store.commit('search/updateFreeDrink', this.free_drink)
+            this.$store.commit('search/updateFreeFood', this.free_food)
+            this.$store.commit('search/updatePrivateRoom', this.private_room)
+            this.$store.commit('search/updateParking', this.parking)
+            this.$store.commit('search/updateCard', this.card)
+            this.$store.commit('search/updateCharter', this.charter)
+            this.$store.commit('search/updateMidnight', this.midnight)
+            this.$store.commit('search/updateChild', this.child)
+            this.$store.commit('search/updatePet', this.pet)
+            this.createQuery()
+            this.commitQuery()
+            console.log("vuex同期")
+        }
+    },
+    methods:{
+        /*
+            クエリ作成メソッド
+            条件設定画面を閉じた時にgetSettingState()で呼び出される
         */
         createQuery : function(): void {
             this.query = this.query_base //クエリ初期化
@@ -259,11 +225,10 @@ export default Vue.extend({
             if(this.pet) {
                 this.query = this.query + '&pet=1'
             }
-            this.commitQuery()
         },
 
         /*
-            createQuery()で更新されたdata()内のクエリをvuex(mutation)にcommitする
+            条件設定画面を閉じた時にgetSettingState()で呼び出され、vuex(mutation)に新クエリをcommitする
         */
         commitQuery : function() : void {
             this.$store.commit('search/updateQuery', this.query)

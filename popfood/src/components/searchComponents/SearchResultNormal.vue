@@ -30,7 +30,6 @@ export default Vue.extend({
         // vuexのクエリの変更を検知
         getQuery() {
             this.$nextTick(() => {
-                //ここで再建策+再描画メソッド実行 ※このままだと条件1つ変える度にAPI叩いてしまう！！！
             })
         }
     }

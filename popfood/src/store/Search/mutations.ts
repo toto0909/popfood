@@ -49,7 +49,11 @@ const mutations: MutationTree<SearchParams> = {
     // 検索用クエリを更新する時に呼び出す(固定条件検索では呼び出さない)
     updateQuery: (state:SearchParams, value: string) => {
         state.query = value
-    }
+    },
+    // 条件設定中のフラグ更新
+    updateSetting: (state:SearchParams, value: boolean) => {
+        state.setting = value
+    },
 }
 
 export default mutations
