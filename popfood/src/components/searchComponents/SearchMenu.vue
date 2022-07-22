@@ -43,28 +43,28 @@
                 <!-- タブ① -->
                 <v-tab-item value=tab-1>
                     <v-card flat tile>
-                        通常検索
+                        <SearchResultNormalVue />
                     </v-card>
                 </v-tab-item>
 
                 <!-- タブ② -->
                 <v-tab-item value=tab-2>
                     <v-card flat tile>
-                        周辺検索
+                        <SearchResultMapVue />
                     </v-card>
                 </v-tab-item>
 
                 <!-- タブ③ -->
                 <v-tab-item value=tab-3>
                     <v-card flat tile>
-                        飲み放題
+                        <SearchResultDrinkFreeVue />
                     </v-card>
                 </v-tab-item>
 
                 <!-- タブ④ -->
                 <v-tab-item value=tab-4>
                     <v-card flat tile>
-                        ラーメン
+                        <SearchResultRamenVue />
                     </v-card>
                 </v-tab-item>
             </v-tabs-items>
@@ -74,9 +74,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import SearchResultNormalVue from './SearchResultNormal.vue'
+import SearchResultMapVue from './SearchResultMap.vue'
+import SearchResultDrinkFreeVue from './SearchResultDrinkFree.vue'
+import SearchResultRamenVue from './SearchResultRamen.vue'
 
 export default Vue.extend({
     name: 'SearchMenu',
+    components: {
+        SearchResultNormalVue,
+        SearchResultMapVue,
+        SearchResultDrinkFreeVue,
+        SearchResultRamenVue
+    },
     data: () => ({
         tab: null,
     })
