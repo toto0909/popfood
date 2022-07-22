@@ -168,7 +168,7 @@ export default Vue.extend({
     },
     computed : {
         // options[]を取得
-        searchState: function() {
+        searchState: function(): string[] {
             this.createOptionTabs()
             return this.options
         }
@@ -177,7 +177,6 @@ export default Vue.extend({
         // computedのsearchStateを監視、vuexの条件更新を監視する => 更新があった場合条件一覧タブを再描画
         searchState() {
             this.$nextTick(() => {
-            console.log('変更されました')
             })
         }
     }

@@ -110,7 +110,6 @@
                 ></v-checkbox>
             </div>
         </div>
-        <p style="margin-bottom: 0;">{{query}}</p>
     </div>
 </template>
 

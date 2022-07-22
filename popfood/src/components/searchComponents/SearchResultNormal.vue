@@ -1,6 +1,7 @@
 <template>
     <div>
         <p>条件検索</p>
+        <p>{{getQuery}}</p>
     </div>
 </template>
 
@@ -8,6 +9,30 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-    name: 'SearchResultNomal'
+    name: 'SearchResultNomal',
+    components: {
+
+    },
+    data: () => ({
+    }),
+    methods: {
+        /*
+            クエリをもとに検索するメソッド
+        */
+    },
+    computed: {
+        // vuexから最新のクエリを取得
+        getQuery: function(): string {
+            return this.$store.getters['search/getQuery']
+        }
+    },
+    watch: {
+        // vuexのクエリの変更を検知
+        getQuery() {
+            this.$nextTick(() => {
+                //ここで再建策+再描画メソッド実行 ※このままだと条件1つ変える度にAPI叩いてしまう！！！
+            })
+        }
+    }
 })
 </script>
