@@ -125,6 +125,23 @@ export default Vue.extend({
             //ジャンル(TODO コードからジャンル名に変換して格納 文字数は最大10とする)
             if(this.$store.getters['search/getGenre'].length > 0){
                 //TODO
+                //ジャンルコードをジャンル名称に変換して追加
+                if (this.$store.getters['search/getGenre'].includes('G001')) this.options.push('居酒屋');
+                if (this.$store.getters['search/getGenre'].includes('G002')) this.options.push('ダイニングバー');
+                if (this.$store.getters['search/getGenre'].includes('G003')) this.options.push('創作料理');
+                if (this.$store.getters['search/getGenre'].includes('G004')) this.options.push('和食');
+                if (this.$store.getters['search/getGenre'].includes('G005')) this.options.push('洋食');
+                if (this.$store.getters['search/getGenre'].includes('G006')) this.options.push('イタリアン・フレンチ');
+                if (this.$store.getters['search/getGenre'].includes('G007')) this.options.push('中華料理');
+                if (this.$store.getters['search/getGenre'].includes('G008')) this.options.push('焼肉・ホルモン');
+                if (this.$store.getters['search/getGenre'].includes('G017')) this.options.push('韓国料理');
+                if (this.$store.getters['search/getGenre'].includes('G009')) this.options.push('アジア・エスニック料理');
+                if (this.$store.getters['search/getGenre'].includes('G010')) this.options.push('各国料理');
+                if (this.$store.getters['search/getGenre'].includes('G011')) this.options.push('パーティ・カラオケ');
+                if (this.$store.getters['search/getGenre'].includes('G012')) this.options.push('バー・カクテル');
+                if (this.$store.getters['search/getGenre'].includes('G013')) this.options.push('ラーメン');
+                if (this.$store.getters['search/getGenre'].includes('G016')) this.options.push('お好み焼き・もんじゃ');
+                if (this.$store.getters['search/getGenre'].includes('G014')) this.options.push('カフェ・スイーツ');
             }
             //キーワード
             if(this.$store.getters['search/getKeyword']) {

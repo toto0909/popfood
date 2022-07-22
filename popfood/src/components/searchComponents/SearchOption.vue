@@ -28,10 +28,80 @@
 
         <!--ジャンル設定-->
         <div class="area">
-            <p style="font-size: 1rem; padding: 1rem; margin-bottom: 0; color: #888888">ジャンル</p>
+            <div style="padding: 1rem;">
+                <p style="font-size: 1rem; margin-bottom: 0; color: #888888">ジャンル</p>
+                <p v-if="genre.length<2" style="font-size:0.4rem; margin-bottom: 0;" >{{genre.length}}/2個選択中</p>
+                <p v-else style="font-size:0.4rem; margin-bottom: 0; color: #FF0000;" >選択できるジャンルは2個までです</p>
+            </div>
+            <ul class="horizontal-list" style="padding-left: 1rem;">
+                <li class="item" @click="setGenre('G001')">
+                    <v-img src="@/assets/genre/izakaya.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G001')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;">居酒屋</p>
+                </li>
+                <li class="item" @click="setGenre('G002')">
+                    <v-img src="@/assets/genre/dining.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G002')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >ダイニングバー・バル</p>
+                </li>
+                <li class="item" @click="setGenre('G003')">
+                    <v-img src="@/assets/genre/sosaku.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G003')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >創作料理</p>
+                </li>
+                <li class="item" @click="setGenre('G004')">
+                    <v-img src="@/assets/genre/wasyoku.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G004')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >和食</p>
+                </li>
+                <li class="item" @click="setGenre('G005')">
+                    <v-img src="@/assets/genre/yosyoku.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G005')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >洋食</p>
+                </li>
+                <li class="item" @click="setGenre('G006')">
+                    <v-img src="@/assets/genre/italian.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G006')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >イタリアン・フレンチ</p>
+                </li>
+                <li class="item" @click="setGenre('G007')">
+                    <v-img src="@/assets/genre/chinese.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G007')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >中華料理</p>
+                </li>
+                <li class="item" @click="setGenre('G008')">
+                    <v-img src="@/assets/genre/yakiniku.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G008')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >焼肉・ホルモン</p>
+                </li>
+                <li class="item" @click="setGenre('G017')">
+                    <v-img src="@/assets/genre/korea.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G017')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >韓国料理</p>
+                </li>
+                <li class="item" @click="setGenre('G009')">
+                    <v-img src="@/assets/genre/ethnic.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G009')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >アジア・エスニック料理</p>
+                </li>
+                <li class="item" @click="setGenre('G010')">
+                    <v-img src="@/assets/genre/forein.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G010')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >各国料理</p>
+                </li>
+                <li class="item" @click="setGenre('G011')">
+                    <v-img src="@/assets/genre/party.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G011')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >パーティ・カラオケ</p>
+                </li>
+                <li class="item" @click="setGenre('G012')">
+                    <v-img src="@/assets/genre/bar.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G012')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >バー・カクテル</p>
+                </li>
+                <li class="item" @click="setGenre('G013')">
+                    <v-img src="@/assets/genre/ramen.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G013')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >ラーメン</p>
+                </li>
+                <li class="item" @click="setGenre('G016')">
+                    <v-img src="@/assets/genre/okonomi.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G016')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >お好み焼き・もんじゃ</p>
+                </li>
+                <li class="item" @click="setGenre('G014')">
+                    <v-img src="@/assets/genre/sweets.jpeg" class="genre_img" aspect-ratio="1" v-bind:class="{'selected': genre.includes('G014')}"></v-img>
+                    <p class="ClipFrame" style="font-size:0.4rem; margin-bottom: 0;" >カフェ・スイーツ</p>
+                </li>
+            </ul>
         </div>
 
-        <!--条件設定-->
+        <!--詳細条件設定-->
         <div class="area">
             <p style="font-size: 1rem; padding: 1rem; margin-bottom: 0; color: #888888">詳細条件</p>
             <div style="margin-left: 1rem;">
@@ -177,7 +247,6 @@ export default Vue.extend({
             this.$store.commit('search/updatePet', this.pet)
             this.createQuery()
             this.commitQuery()
-            console.log("vuex同期")
         }
     },
     methods:{
@@ -196,6 +265,11 @@ export default Vue.extend({
             if(this.middle_area.length > 0){
                 for(const area of this.middle_area){
                     this.query = this.query + '&middle_area=' + area
+                }
+            }
+            if(this.genre.length > 0){
+                for(const gen of this.genre){
+                    this.query = this.query + '&genre=' + gen
                 }
             }
             if(this.free_drink) {
@@ -232,6 +306,26 @@ export default Vue.extend({
         */
         commitQuery : function() : void {
             this.$store.commit('search/updateQuery', this.query)
+        },
+
+        // ジャンル設定
+        setGenre : function(genge_code: string): void {
+            if(this.genre.includes(genge_code)){
+                //要素削除 ほんとはfilter使って1行でやりたいが...なぜかできない
+                //this.genre = this.genre.filter(function(x){return x != genge_code})
+                for (let i = 0; i < this.genre.length; i++) {
+                    if(this.genre[i]===genge_code){
+                        this.genre.splice(i, 1)
+                    }
+                }
+            }else{
+                //2個まで追加可能
+                if(this.genre.length>=2){
+                    return
+                }else{
+                    this.genre.push(genge_code) //要素追加
+                }
+            }
         },
 
         // 都道府県選択時 / vuex更新 / 検索クエリ更新
@@ -288,4 +382,48 @@ export default Vue.extend({
         margin-left: 1rem;
         margin-right: 1rem;
     }
+/* 横スクロール用-- */
+.horizontal-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: auto;
+    scrollbar-color: transparent transparent;
+    }
+.horizontal-list::-webkit-scrollbar {
+    height: 0px;
+    display: none;
+}
+.horizontal-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+.horizontal-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+.horizontal-list::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0);
+}
+.item {
+    display: inline-block;
+    margin: 5px;
+    width: 4rem;
+}
+.genre_img{
+    border: solid 0.5px #888888;
+    background: transparent;
+}
+.selected {
+    border: solid 3px #FF0000;
+    background: transparent;
+}
+/* --横スクロール用 */
+
+/* 文字のはみ出し防止 */
+.ClipFrame {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    -webkit-text-overflow: clip; /*Safari用*/
+    -o-text-overflow: clip; /*Opera用*/
+}
 </style>
