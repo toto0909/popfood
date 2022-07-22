@@ -18,6 +18,9 @@ const mutations: MutationTree<SearchParams> = {
         state.middle_area.push(value)
     },
     //検索中エリアを1つ削除
+    updateGenre: (state:SearchParams, value: string[]) => {
+        state.genre = value
+    },
 
     updateFreeDrink: (state:SearchParams, value: boolean) => {
         state.free_drink = value

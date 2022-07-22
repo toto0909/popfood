@@ -15,10 +15,12 @@ export default Vue.extend({
     data: () => ({
         large_area: '',  //都道府県コード
         middle_area: [] as string[], //地域コード
+        genre: [] as string[],
         query: '',
     }),
     created: function(){
         //初期クエリ作成(都道府県/地域のみ) => data() => queryに格納 => vuex更新
+        this.genre = this.$store.getters['search/getGenre']
         this.large_area = this.$store.getters['search/getLargeArea']
         this.middle_area = this.$store.getters['search/getMiddleArea']
         this.query = hotpepper + '&large_area=' + this.large_area
