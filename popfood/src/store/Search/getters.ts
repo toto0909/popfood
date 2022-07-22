@@ -51,6 +51,10 @@ const getters: GetterTree<SearchParams, RootState> = {
     },
     getPet: (state: SearchParams) => {
         return state.pet
+    },
+    // 検索用の最新クエリーを都度保存(固定検索時は使用しない)
+    getQuery: (state: SearchParams) => {
+        return state.query
     }
 }
 

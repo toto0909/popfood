@@ -24,4 +24,5 @@ export interface SearchParams {
     midnight : boolean;    //23時以降営業(1:絞り込みあり)
     child : boolean;       //子連れ可能(1:絞り込みあり)
     pet : boolean;         //ペット可能(1:絞り込みあり)
+    query : string;        //検索用クエリー
 }

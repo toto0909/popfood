@@ -46,6 +46,10 @@ const mutations: MutationTree<SearchParams> = {
     updatePet: (state:SearchParams, value: boolean) => {
         state.pet = value
     },
+    // 検索用クエリを更新する時に呼び出す(固定条件検索では呼び出さない)
+    updateQuery: (state:SearchParams, value: string) => {
+        state.query = value
+    }
 }
 
 export default mutations

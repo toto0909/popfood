@@ -161,7 +161,7 @@ export default Vue.extend({
         this.midnight = this.$store.getters['search/getMidnight']
         this.child = this.$store.getters['search/getChild']
         this.pet = this.$store.getters['search/getPet']
-        this.createQuery() //クエリ更新
+        this.createQuery() //クエリ更新(初期クエリの生成)
     },
     methods:{
         // キーワード設定(String型) / vuex更新 / 検索クエリ更新
@@ -218,6 +218,7 @@ export default Vue.extend({
         /*
             クエリ作成メソッド(値を変更する度に呼び出される)
             都度query_baseの初期値を元に再生成される
+            ※あくまでオプションページ内のdata()を変更するのみ。vuex更新は別メソッド
         */
         createQuery : function(): void {
             this.query = this.query_base //クエリ初期化
@@ -259,6 +260,13 @@ export default Vue.extend({
             if(this.pet) {
                 this.query = this.query + '&pet=1'
             }
+        },
+
+        /*
+            createQuery()で更新されたdata()内のクエリをvuex(mutation)にcommitする
+        */
+        commitQuery : function() : void {
+            this.$store.commit('search/updateQuery', this.query)
         },
 
         // 都道府県選択時 / vuex更新 / 検索クエリ更新
