@@ -235,6 +235,7 @@ export default Vue.extend({
     watch:{
         //state = setting: boolの変更を監視 => falseになる瞬間(設定画面が閉じる瞬間)にvuexとの同期をまとめて行う
         getSettingState(){
+            this.$store.commit('search/updateGenre', this.genre)
             this.$store.commit('search/updateKeyword', this.keyword)
             this.$store.commit('search/updateFreeDrink', this.free_drink)
             this.$store.commit('search/updateFreeFood', this.free_food)
