@@ -4,6 +4,9 @@ import { SearchParams, RootState } from "../types";
 const getters: GetterTree<SearchParams, RootState> = {
     //ここにgetter関数を作成
     //アロー関数例
+    getLoading: (state: SearchParams) => {
+        return state.loading
+    },
     getKeyword: (state: SearchParams) => {
         return state.keyword
     },

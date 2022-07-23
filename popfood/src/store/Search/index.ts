@@ -6,8 +6,9 @@ import actions from './actions'
 
 //state<SearchParams>の初期化
 const state: SearchParams = {
+    loading: true,                //ローディングアニメーション(初回はtrueで実行)
     prefecture: "東京",
-    large_area: "Z011", //サンプル 東京
+    large_area: "Z011",           //サンプル 東京
     middle_area: ["Y005","Y030"], //サンプル 銀座, 渋谷
     lat: 0,
     lan: 0,

@@ -1,6 +1,8 @@
 <template>
     <!--SP版-->
     <div v-if="$vuetify.breakpoint.xs">
+        <!--位置情報取得中ローディングアニメーション-->
+        <Loading />
         <v-container fluid>
             <div style="margin-top: 0.5rem;">
                 <v-row class="text-center">
@@ -36,11 +38,17 @@
                         </div>
                     </v-col>
 
-                    <!--位置情報取得ボタン-->
+                    <!--位置情報取得ボタン 位置情報が無い時活性化-->
                     <v-col cols="5" style="padding-bottom: 0.5rem;">
-                        <div class="">
-                            <v-btn rounded block color=#afd147 style="text-transform: none; font-size: 0.7rem; font-weight: 500; color: #FFFFFF" class="text-center">
+                        <div v-if="lat <= 0 && lan <= 0">
+                            <v-btn @click="getLocation()" rounded block color=#afd147 style="text-transform: none; font-size: 0.7rem; font-weight: 500; color: #FFFFFF" class="text-center">
                                 <span>位置情報を利用　</span>
+                                <span><v-icon style="font-size: 1.0rem;">mdi-map-marker-outline</v-icon></span>
+                            </v-btn>
+                        </div>
+                        <div v-else>
+                            <v-btn rounded block disabled style="text-transform: none; font-size: 0.7rem; font-weight: 500;" class="text-center">
+                                <span>位置情報取得済み　</span>
                                 <span><v-icon style="font-size: 1.0rem;">mdi-map-marker-outline</v-icon></span>
                             </v-btn>
                         </div>
@@ -91,18 +99,26 @@
 import Vue from 'vue'
 import SearchOption from '@/components/searchComponents/SearchOption.vue'
 import SearchMenu from '@/components/searchComponents/SearchMenu.vue'
+import Loading from '@/components/Loading.vue'
 
 export default Vue.extend({
     name: 'SearchHeader',
     components: {
         SearchOption,
-        SearchMenu
+        SearchMenu,
+        Loading
     },
     data: () => ({
         dialog: false,
-        setting: false,         //オプション設定画面を開いているかのフラグ
-        options: [] as string[] //オプション選択された内容(文字列配列)
+        setting: false,          //オプション設定画面を開いているかのフラグ
+        options: [] as string[], //オプション選択された内容(文字列配列)
+        lat: 0,   //緯度
+        lan: 0,   //経度
     }),
+    mounted: function(){
+        this.lat = this.$store.getters['search/getLat'] //vuexから緯度取得
+        this.lan = this.$store.getters['search/getLan'] //vuexから経度取得
+    },
     methods: {
         /*
             メモ
@@ -122,9 +138,8 @@ export default Vue.extend({
             if(this.$store.getters['search/getMiddleArea'].length > 0){
                 //TODO
             }
-            //ジャンル(TODO コードからジャンル名に変換して格納 文字数は最大10とする)
+            //ジャンル
             if(this.$store.getters['search/getGenre'].length > 0){
-                //TODO
                 //ジャンルコードをジャンル名称に変換して追加
                 if (this.$store.getters['search/getGenre'].includes('G001')) this.options.push('居酒屋');
                 if (this.$store.getters['search/getGenre'].includes('G002')) this.options.push('ダイニングバー');
@@ -184,12 +199,42 @@ export default Vue.extend({
                 this.options.push('ペットOK')
             }
         },
+        //詳細条件設定画面ON/OFFフラグ
         setSettingStateTrue: function(): void {
             this.$store.commit('search/updateSetting', true)
         },
         setSettingStateFalse: function(): void {
             this.$store.commit('search/updateSetting', false)
-        }
+        },
+
+        /*
+            位置情報取得メソッド
+            非同期 + 位置情報取得中はアニメーションで画面封鎖(取得成功/失敗後に解除)
+            取得後はvuexの緯度・経度を更新する
+            値 : 0...未取得 正...正常取得済み 負...取得失敗
+        */
+        getLocation: function(): void {
+            this.$store.commit('search/updateLoading', true) //vuex => ローディングアニメーションON
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    //成功時のコールバック関数
+                    this.lat = position.coords.latitude;  //緯度
+                    this.lan = position.coords.longitude; //経度
+                    this.$store.commit('search/updateLat', position.coords.latitude);
+                    this.$store.commit('search/updateLan', position.coords.longitude);
+                    this.$store.commit('search/updateLoading', false) //vuex => ローディングアニメーションOFF
+                },
+                (error) => {
+                    //失敗時のコールバック関数 失敗時は負の値を格納する
+                    this.lat = -1;  //緯度
+                    this.lan = -1; //経度
+                    this.$store.commit('search/updateLat', -1);
+                    this.$store.commit('search/updateLan', -1);
+                    this.$store.commit('search/updateLoading', false)
+                    window.alert('エラー | 位置情報の取得に失敗しました。' + error);
+                },
+            )
+        },
     },
     computed : {
         // options[]を取得
