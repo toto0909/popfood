@@ -25,6 +25,9 @@ const getters: GetterTree<SearchParams, RootState> = {
     getLan: (state: SearchParams) => {
         return state.lan
     },
+    getRange: (state: SearchParams) => {
+        return state.range
+    },
     getGenre: (state: SearchParams) => {
         return state.genre
     },

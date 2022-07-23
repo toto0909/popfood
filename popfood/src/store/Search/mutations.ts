@@ -25,12 +25,15 @@ const mutations: MutationTree<SearchParams> = {
         state.genre = value
     },
 
-    //位置情報
+    //位置情報・検索半径
     updateLat: (state:SearchParams, value: number) => {
         state.lat = value
     },
     updateLan: (state:SearchParams, value: number) => {
         state.lan = value
+    },
+    updateRange: (state:SearchParams, value: number) => {
+        state.range = value
     },
 
     updateFreeDrink: (state:SearchParams, value: boolean) => {

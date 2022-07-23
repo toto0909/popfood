@@ -226,7 +226,7 @@ export default Vue.extend({
                 },
                 (error) => {
                     //失敗時のコールバック関数 失敗時は負の値を格納する
-                    this.lat = -1;  //緯度
+                    this.lat = -1; //緯度
                     this.lan = -1; //経度
                     this.$store.commit('search/updateLat', -1);
                     this.$store.commit('search/updateLan', -1);
