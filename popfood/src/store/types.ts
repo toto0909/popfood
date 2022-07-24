@@ -7,11 +7,12 @@ export interface RootState {
 }
 
 export interface SearchParams {
+    loading: boolean;      //ローディング判定(強制画面停止用)
     prefecture : string;   //検索都道府県名称
     large_area : string;   //検索大エリアコード (例 Z011=東京)
     middle_area : string[];  //検索中エリアコード **5つまで** (例 Y030=渋谷)
-    lat : number;          //検索経度
-    lan : number;          //検索緯度
+    lat : number;          //検索経度(値 : 0...未取得 正...正常取得済み 負...取得失敗)
+    lan : number;          //検索緯度(値 : 0...未取得 正...正常取得済み 負...取得失敗)
     range : number;        //検索範囲 (1: 300m 2: 500m 3: 1000m (初期値) 4: 2000m 5: 3000m)
     keyword : string;      //検索キーワード
     genre : string[];       //店舗ジャンル **2つまで**

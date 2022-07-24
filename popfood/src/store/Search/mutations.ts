@@ -4,6 +4,9 @@ import { SearchParams } from '../types';
 const mutations: MutationTree<SearchParams> = {
     //ここにmutations関数を作成
     //アロー関数例
+    updateLoading: (state:SearchParams, value: boolean) => {
+        state.loading = value
+    },
     updateKeyword: (state:SearchParams, value: string) => {
         state.keyword = value
     },
@@ -20,6 +23,17 @@ const mutations: MutationTree<SearchParams> = {
     //検索中エリアを1つ削除
     updateGenre: (state:SearchParams, value: string[]) => {
         state.genre = value
+    },
+
+    //位置情報・検索半径
+    updateLat: (state:SearchParams, value: number) => {
+        state.lat = value
+    },
+    updateLan: (state:SearchParams, value: number) => {
+        state.lan = value
+    },
+    updateRange: (state:SearchParams, value: number) => {
+        state.range = value
     },
 
     updateFreeDrink: (state:SearchParams, value: boolean) => {

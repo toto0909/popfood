@@ -11,7 +11,9 @@ import { hotpepper } from '@/plugins/api' //検索APIエンドポイント
 
 export default Vue.extend({
     name: 'searchTop',
-    components: { SearchHeader },
+    components: {
+        SearchHeader,
+    },
     data: () => ({
         large_area: '',  //都道府県コード
         middle_area: [] as string[], //地域コード
