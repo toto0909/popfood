@@ -8,6 +8,7 @@
 
             <!-- 位置情報取得ずみの場合-->
             <div v-if="getLatitude > 0">
+                <!--半径設定スライダー-->
                 <p style="font-size: 0.8rem; color:#888888; margin-bottom: 0;">検索半径</p>
                 <v-card-text style="padding-top: 0">
                     <v-slider
@@ -24,6 +25,7 @@
                         :max="5"
                     ></v-slider>
                 </v-card-text>
+                <!--Google Map-->
                 <p>{{getQuery}}</p>
             </div>
 
